@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GunAway</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.jpg">
+
+
+    <!-- HEAD VEDANT-->
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="angularjs/gunawayng.js"></script>
+    <link rel="stylesheet" href="stylesheets/style_1.css">
+
+</head>
+
+<body ng-app="gunawayapp" ng-controller="gunaway">
+
+<!-- Top content -->
+<div class="top-content">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text">
+                <h1><img src="assets/ico/no_gun.png" alt="GunAway" width="50" height="50"><strong>  GunAway</strong></h1>
+                <div class="description">
+                    <p>
+                        GunAway is a service that tries to prevent potential misuse of the guns
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 form-box">
+                <form role="form" class="f1">
+
+                    <h4><i>"Every life matters, think twice before pulling the trigger"</i></h4>
+                    <!--<p>Please fill the form to get instant access to your gun </p>-->
+                    <div class="f1-steps">
+                        <div class="f1-progress">
+                            <div class="f1-progress-line" data-now-value="16.66" data-number-of-steps="3" style="width: 16.66%;"></div>
+                        </div>
+                        <div class="f1-step active">
+                            <div class="f1-step-icon"><i class="fa fa-meh-o"></i></div>
+                            <p>Feelings</p>
+                        </div>
+                        <div class="f1-step">
+                            <div class="f1-step-icon"><i class="fa fa-spinner"></i></div>
+                            <p>Almost done!!</p>
+                        </div>
+                        <div class="f1-step">
+                            <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                            <p>Personal Info</p>
+                        </div>
+                    </div>
+
+                    <fieldset>
+                        <h5>Please read each statement and circle a description that most applied to you over the past two weeks.  There are no right or wrong answers. Do not spend too much time on any statement. Thank you!</h5>
+                        <h4>1. Feeling nervous, anxious, or on-edge</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q1" ng-model="q1" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q1" ng-model="q1" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q1" ng-model="q1" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q1" ng-model="q1" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>2. Feeling, down, depressed, or hopeless</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q2" ng-model="q2" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q2" ng-model="q2" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q2" ng-model="q2" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q2" ng-model="q2" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>3. Not being able to stop or control worrying</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q3" ng-model="q3" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q3" ng-model="q3" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q3" ng-model="q3" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q3" ng-model="q3" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>4. Being so restless that it is hard to sit still</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q4" ng-model="q4" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q4" ng-model="q4" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q4" ng-model="q4" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q4" ng-model="q4" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>5. Becoming easily annoyed or irritable</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q5" ng-model="q5" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q5" ng-model="q5" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q5" ng-model="q5" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q5" ng-model="q5" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>6. Feeling afraid as if something awful might happen</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q6" ng-model="q6" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q6" ng-model="q6" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q6" ng-model="q6" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q6" ng-model="q6" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="f1-buttons">
+                            <button type="button" class="btn btn-next">Next</button>
+                        </div>
+                    </fieldset>
+
+
+
+                    <fieldset>
+                        <h5>Please read each statement and circle a description that most applied to you over the past two weeks.  There are no right or wrong answers. Do not spend too much time on any statement. Thank you!</h5>
+                        <h4>7. Couldn't stop doing something, even if knowing it is wrong</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q7" ng-model="q7" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q7" ng-model="q7" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q7" ng-model="q7" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q7" ng-model="q7" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>8. Feeling a failure (e.g. have let the family down)</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q8" ng-model="q8" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q8" ng-model="q8" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q8" ng-model="q8" value="12" required>Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q8" ng-model="q8" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>9. Tend to over-react to situations</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q9" ng-model="q9" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q9" ng-model="q9" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q9" ng-model="q9" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q9" ng-model="q9" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>10. Experienced shivering (e.g. in the hands)</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q10" ng-model="q10" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q10" ng-model="q10" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q10" ng-model="q10" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q10" ng-model="q10" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>11. Felt scared without any good reason</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q11" ng-model="q11" value="0" required> None of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q11" ng-model="q11" value="8" required> Some of the Time</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q11" ng-model="q11" value="12" required> Many of the Time</td><td width="100px"></td>
+                                    <td><input type="radio" name="q11" ng-model="q11" value="20" required> All of the Time<br></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="f1-buttons">
+                            <button type="button" class="btn btn-previous">Previous</button>
+                            <button type="button" class="btn btn-next">Next</button>
+                        </div>
+                    </fieldset>
+
+
+
+
+
+                    <fieldset>
+                        <h5>Please share your Personal Info with us. Thank you!</h5>
+                        <h4>12. Age</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q12" ng-model="q12" value="8" required> 18-25</td><td width="228px"></td>
+                                    <td><input type="radio" name="q12" ng-model="q12" value="20" required> 26-40</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="q12" ng-model="q12" value="8" required> 41-60</td><td width="228px"></td>
+                                    <td><input type="radio" name="q12" ng-model="q12" value="4" required> Above 60<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>13. Gender</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q13" ng-model="q13" value="24" required> Male</td><td width="234px"></td>
+                                    <td><input type="radio" name="q13" ng-model="q13" value="16" required> Female<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>14. Marital status</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q14" ng-model="q14" value="20" required> Single</td><td width="100px"></td>
+                                    <td><input type="radio" name="q14" ng-model="q14" value="12" required> Married</td><td width="100px"></td>
+                                    <td><input type="radio" name="q14" ng-model="q14" value="8" required> Divorced<br></td><td width="100px"></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>15. What part of country you live in?</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q15" ng-model="q15" value="8" required> Urban</td><td width="100px"></td>
+                                    <td><input type="radio" name="q15" ng-model="q15" value="12" required> Rural</td><td width="115px"></td>
+                                    <td><input type="radio" name="q15" ng-model="q15" value="20" required> Remote<br></td><td width="100px"></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>16. Did any member of your household committed suicide?</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q16" ng-model="q16" value="70" required> Yes</td><td width="243px"></td>
+                                    <td><input type="radio" name="q16" ng-model="q16" value="30" required> No<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>17. have you ever been involved in any criminal cases?</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q17" ng-model="q17" value="90" required> Yes</td><td width="243px"></td>
+                                    <td><input type="radio" name="q17" ng-model="q17" value="10" required> No<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>18. Do you live alone or are alone most of the time of a day?</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q18" ng-model="q18" value="60" required> Yes</td><td width="243px"></td>
+                                    <td><input type="radio" name="q18" ng-model="q18" value="40" required> No<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <h4>19. Have you ever suffered any of the following mental illness disorders like: depression, bipolar disorder, and anxiety disorders?</h4>
+                        <div class="form-group">
+                            <table>
+                                <tr>
+                                    <td><input type="radio" name="q19" ng-model="q19" value="90" required="required"> Yes</td><td width="243px"></td>
+                                    <td><input type="radio" name="q19" ng-model="q19" value="10" required="required"> No<br></td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                        <div class="f1-buttons">
+                            <button type="button" class="btn btn-previous">Previous</button>
+                            <button type="submit" class="btn btn-primary" ng-click="gunawaycheck()">Submit</button>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Javascript -->
+<script src="assets/js/jquery-1.11.1.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.backstretch.min.js"></script>
+<script src="assets/js/retina-1.1.0.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+
+<!--[if lt IE 10]>
+<script src="assets/js/placeholder.js"></script>
+<![endif]-->
+
+</body>
+
+</html>
