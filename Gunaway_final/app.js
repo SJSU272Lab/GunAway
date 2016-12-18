@@ -87,7 +87,7 @@ app.post('/getproduct', getproduct.getproduct);
 app.post('/reg1', sign.reg1);
 app.post('/getMyAds', getproduct.getMyAds);
 //app.post('/emailnotreg', sign.emailnotreg);
-app.post('/emailreg', sign.emailreg);
+//app.post('/emailreg', sign.emailreg);
 app.post('/check_handle', sign.check_handle);
 app.post('/profile', profile.profile);
 app.post('/logininfo', logininfo.logininfo);
