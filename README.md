@@ -1,6 +1,8 @@
 # Fall16-Team10
 Project Name: GunAway
 GunAway is a web service that integrates with e-commerce websites and helps to prevent gun violence by approving only those, to buy a gun, who are eligible(have no mental illness) to buy guns.
+
+http://ec2-35-161-24-32.us-west-2.compute.amazonaws.com:3000/signin
 ------------------------------------------------------------------------------------------------------------------------------
 
 Steps for running the project:<br />
